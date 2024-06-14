@@ -4,6 +4,19 @@
     border: border-box;
 }
 
+.mobile {
+    display: none;
+}
+  
+@media only screen and (max-device-width: 480px) {
+    .navbar {
+      display: none;
+    }
+    .navbar .mobile {
+      display: block;
+    }
+}
+
 .navbar {
     height: 60px;
     background-color: #0d1b2a;
