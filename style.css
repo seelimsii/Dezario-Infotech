@@ -4,19 +4,6 @@
     border: border-box;
 }
 
-.mobile {
-    display: none;
-}
-  
-@media only screen and (max-device-width: 480px) {
-    .navbar {
-      display: none;
-    }
-    .navbar .mobile {
-      display: block;
-    }
-}
-
 .navbar {
     height: 60px;
     background-color: #0d1b2a;
@@ -76,4 +63,63 @@
 }
 .add-icon-sec {
     align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text-section {
+    max-width: 500px;
+    margin-right: 2rem;
+}
+.text-section h1 {
+    font-size: 1rem;
+    margin: 0;
+}
+.text-section h1 span {
+    color: #9B59B6;
+    font-size: 2rem;
+}
+.text-section p {
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+.buttons a {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+.buttons .connect {
+    background-color: #9B59B6;
+    color: white;
+}
+.buttons .works {
+    border: 2px solid #333;
+    color: #333;
+}
+.image-section {
+    position: relative;
+}
+.image-section img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
