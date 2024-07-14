@@ -67,14 +67,14 @@
 
 /* Hero Section */
 .hero-section {
-    background-color: #f0f0f0;
+    background-color: black;
 }
 
 .container {
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #f0f0f0;
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -89,7 +89,8 @@
 }
 .text-section h1 span {
     color: #9B59B6;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-shadow: 1px 1px black;
 }
 .text-section p {
     margin: 1rem 0;
@@ -118,8 +119,10 @@
     position: relative;
 }
 .image-section img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    /* border-radius: 50%; */
+    width: 900px;
+    height: 150px;
     object-fit: cover;
 }
+
+

@@ -6,7 +6,9 @@
     <title>Dezario Infotech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <header>
         <div class = "navbar">
@@ -23,10 +25,10 @@
             </div>
             
             <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#contact"><b>Contact</b></a>
+                <a href="#home" id="home">Home</a>
+                <a href="#projects" id="projects">Projects</a>
+                <a href="#about" id="about">About</a>
+                <a href="#contacts" id="contact"><b>Contact</b></a>
             </div>
         </div>
     </header>
@@ -37,13 +39,14 @@
                 <h1>Unleash Your<br>Digital Potential with<br> <span>Dezario Infotech</span><br></h1><h3>New age solution for IT problems</h3>
                 <p>Tired of juggling multiple IT vendors? Dezario Infotech is your one-click solution to a thriving online presence. We're a passionate startup breaking the mold of traditional IT service providers.                </p>
                 <div class="buttons">
-                    <a href="#" class="connect">Let's connect!</a>
-                    <a href="#" class="works">Selected works</a>
+                    <!-- <button onclick="document.location='./contact.html'" class="connect">HTML Tutorial</button> -->
+                    <a href="./contact.html" class="connect">Let's connect!</a>
+                    <a href="projects" class="works" id="projects">Selected works</a>
                 </div>
             </div>
             <div class="image-section">
-                <img src="path/to/image.jpg" alt="ImagePending">
-            </div>
+                <img src="logo.png" alt="ImagePending">
+            </div>    
         </div>
     </div>
 </body>

@@ -1,0 +1,17 @@
+.project{
+    background-color: #CDE2E4;
+}
+.project-header{
+    background-image: url("project-eye.jpg");
+    background-size: cover;
+    height: 43rem;
+    width: 100%;
+    text-align: center;
+}
+.project-header h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-size: 5rem;
+    color: #2b6cb1;
+    text-shadow: 2px 2px #CDE2E4;
+}
