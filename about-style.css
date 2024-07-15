@@ -2,10 +2,11 @@
 
 .about {
     background-color: #f0f0f0;
+    margin-top: 0.8rem;
 
 }
 .about-header{
-    background-image: url("corporateImage.jpeg");
+    background-image: url("about-office.jpg");
     background-size: cover;
     height: 50rem;
     width: 100%;
@@ -15,26 +16,33 @@
     right: 0;
     bottom: 0; */
     /* background: rgba(0, 0, 0, 0.5);  */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; */
+    /* align-items: center; */
     /* line-height: 50rem; */
+    text-align: center;
 }
+@font-face {
+    font-family: Gotham;
+    src: url(Gotham-Font/Gotham-Bold.otf);
+}
+
 .about-header h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Gotham;
     margin: 0;
     font-size: 5rem;
-    color: #2b6cb1;
-    text-shadow: 2px 2px black;
+    color: black;
+    text-shadow: 2px 2px #96D0D6;
+    /* letter-spacing: 0.1rem; */
 }
 .about-header p{
     /* margin: 0rem; */
     font-size: 1.7rem;
-    color: #FFAB56;
+    color: black;
     padding-left: 20%;
     padding-right: 20%;
-    text-shadow: 0.5px 0.5px black;
+    /* text-shadow: 0.5px 0.5px #96D0D6; */
 }
 
 /* our expertise */

@@ -1,5 +1,6 @@
-.project{
+.projects{
     background-color: #CDE2E4;
+    margin-top: 0.7rem;
 }
 .project-header{
     background-image: url("project-eye.jpg");
