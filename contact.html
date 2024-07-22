@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact-style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Gk6whjKwmrPZYCOEO");
+        })();
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" id="home">Home</a>
+                <a href="#projects" id="projects">Projects</a>
+                <a href="#about" id="about">About</a>
+                <a href="#contacts" id="contact"><b>Contact</b></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact">
+        <div class="con-sec1">
+            <div class="contact-section1">
+                <div class="contact-section1i">
+                    <h1>Heading</h1>
+                    <p>My name is Mehak Aggarwal</p>
+                </div>
+                <div class="contact-section1ii">
+                    <h1>Heading</h1>
+                    <p>My name is Mehak Aggarwal</p>
+                </div>
+            </div>
+            <div class="contact-section2">
+                <h1>For Sales and Collaborations</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate mollitia reprehenderit libero architecto, quia enim inventore, dicta veritatis similique animi quam aspernatur sed saepe dignissimos qui culpa voluptatibus nesciunt hic!
+                </p>
+            </div>
+            <div class="contact-section3">
+                <h1>For Career and Jobs</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quaerat quod, ab repellendus rem obcaecati voluptatibus illum quibusdam fugiat necessitatibus voluptas quidem delectus dignissimos laudantium commodi animi, quam quis corrupti?
+                </p>
+            </div>
+        </div>
+        
+        <div class="con-sec2">
+            <div class="contact-us">
+                <h1>Contact Us</h1>
+                <p>
+                    Get in touch to see our reasonably priced and exceptional services.
+                </p>
+                <hr size="2" width="100%" color="black">
+                <p></p>
+                <p></p>
+            </div>
+            <form id="contact-form">
+                <div class="form-row">
+                    <input type="text" name="first_name" id="first_name" placeholder="First name" required>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last name" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="company" id="company" placeholder="Enter company" required>
+                    <input type="email" name="email" id="email" placeholder="Work email" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" name="phone" placeholder="Enter phone number" required>
+                    <select name="identity" id="identity" required>
+                        <option value="" disabled selected>How do you identify yourself?</option>
+                        <option value="job-seeker">Job Seeker</option>
+                        <option value="freelancer">Freelancer</option>
+                        <option value="client">Client</option>
+                        <option value="vendor">Vendor</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <textarea name="services" id="services" placeholder="Which services are you interested in?" required></textarea>
+                <div class="form-row4">
+                    <div class="constant">
+                        <div class="form-row2">
+                            <input type="checkbox" name="terms" id="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms & Condition</a></label>
+                        </div>
+                        <div class="form-row3">
+                            <input type="checkbox" name="recaptcha" id="recaptcha" required>
+                            <label for="recaptcha">I'm not a robot</label>
+                        </div>
+                        <button type="submit">Send Message -></button>
+                    </div>
+                    <img src="logo.png" alt="Founder's Image">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Collect form data
+            var templateParams = {
+                first_name: document.getElementById('first_name').value,
+                last_name: document.getElementById('last_name').value,
+                company: document.getElementById('company').value,
+                email: document.getElementById('email').value,
+                identity: document.getElementById('identity').value,
+                message: document.getElementById('services').value
+            };
+
+            emailjs.sendForm('service_seelimsii', 'template_4a7y0u9', this)
+                .then(function() {
+                    alert('Email sent successfully!');
+                }, function(error) {
+                    alert('Failed to send email. Error: ' + JSON.stringify(error));
+                });
+        });
+    </script>
+</body>
+</html>

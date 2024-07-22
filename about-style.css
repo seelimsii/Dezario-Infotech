@@ -90,12 +90,14 @@
 }
 .highlight-item h3 {
     color: #597CFF;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.2rem;
     /* margin-bottom: 10px; */
 }
 .highlight-item p {
     color: #555;
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 0.8rem;
 }
 
 /* meet the founder */
