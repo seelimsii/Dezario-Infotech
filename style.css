@@ -18,7 +18,7 @@
 .nav-logo {
     height: 100%;
     width: 60rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.2rem;
 }
@@ -130,3 +130,73 @@
 }
 
 
+/* FOOTER */
+
+footer {
+    background-color: #0d1b2a;
+    color: #74C0FC;
+    padding: 3rem 0;
+}
+
+.footer-container {
+    display: flex;
+    padding: 0 5rem;
+    text-align: left;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    /* margin: 10px; */
+}
+
+.footer-section img {
+    max-width: 90%;
+}
+.footer-section h2 {
+    font-size: 1.2em;
+    /* margin-bottom: 10px; */
+    padding: 1rem;
+}
+.footer-section h2 span{
+    margin-left: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 0.9em;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #74C0FC;
+    text-decoration: none;
+}
+
+.footer-section a {
+    color: #74C0FC;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid #444;
+    line-height: 1.2;
+}
+
+.social-icons a {
+    color: #74C0FC;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
